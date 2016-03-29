@@ -1,6 +1,6 @@
 # Chrome_Venom
 
-This is modification of the original code of https://github.com/hassaanaliw/chromepass and I have added the function def ok()
+This is modification of the original code of https://github.com/hassaanaliw/chromepass and I have added the function def mail()
 
 The original code just prints the google chrome passwords on the python IDE, so I add the function ok to store the output to a txt file and 
 send It via email.
@@ -10,7 +10,7 @@ variable.
 
 **DISCLAIMER**
 
-I have no responsibility if someone acts irressponsible or against the law.
+I have no responsibility if someone acts irresponsible or against the law.
 
 Thanks
 Ierofantis
